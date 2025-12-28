@@ -1,5 +1,42 @@
+//  DAY 34 
+
+// Print multiplication of 5
+
+for( let i = 1; i <= 10; i++ ) {
+    console.log(`5 x ${i} = ${5 * i}`);
+}
+
+// Aks user's age and check if eligible for voting
+
+let age = prompt("Enter your age: ")
+
+if ( age === null) {
+    console.error("You cancelled it.")
+}else {
+    if (age.trim() === "") {
+        console.error("please write something...")
+    }else{
+        age = Number(age)
+        if(isNaN(age)){
+            console.error("Please enter a valid number")
+        }else{
+            if (age < 0){
+                console.error("Age cannot be negative")
+            } else if (age < 18){
+                console.log("You are a minor")
+            } else if (age >= 18 && age < 65){
+                console.log("You are an adult")
+            } else {
+                console.log("You are a senior citizen")
+            }
+            console.log(`your age is ${age}`)
+        }
+    } 
+}
 
 
+
+// DAY33 
 
 //  when every we use prompt the input is always string to convert it to number we use + before prompt
 // or use parseInt() or parseFloat()
