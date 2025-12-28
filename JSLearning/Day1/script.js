@@ -1,38 +1,90 @@
 //  DAY 34 
 
-// Print multiplication of 5
+// Part 2
+let attempts = 0;
+let flag = false;
+let pass = "Samrat@123"
 
-for( let i = 1; i <= 10; i++ ) {
-    console.log(`5 x ${i} = ${5 * i}`);
+let password = prompt("Enter your password: ");
+attempts++;
+
+if (password.trim() === pass) {
+    flag = true;
+    console.log("Go Ahead")
 }
 
-// Aks user's age and check if eligible for voting
+while (password.trim() !== pass) {
+    if( attempts === 3){
+        console.error("Account locqwked")
+        break;
+    }
+  password = prompt("Incorrect password. please try again: ")
+  if(password.trim() === pass) {flag = true;
+  console.log("Go ahead")}
+  attempts++;
 
-let age = prompt("Enter your age: ")
-
-if ( age === null) {
-    console.error("You cancelled it.")
-}else {
-    if (age.trim() === "") {
-        console.error("please write something...")
-    }else{
-        age = Number(age)
-        if(isNaN(age)){
-            console.error("Please enter a valid number")
-        }else{
-            if (age < 0){
-                console.error("Age cannot be negative")
-            } else if (age < 18){
-                console.log("You are a minor")
-            } else if (age >= 18 && age < 65){
-                console.log("You are an adult")
-            } else {
-                console.log("You are a senior citizen")
-            }
-            console.log(`your age is ${age}`)
-        }
-    } 
 }
+
+
+// // Ask your user fro password and print acces status
+
+// let password = "Samrat@123"
+
+// let pass = prompt("Enter your password: ")
+
+// if( pass === null){
+//     console.error("you cancelledhello it")
+// }else{
+//     if( pass.trim() === password){
+//         console.log("matched")
+//     }else{
+//         console.error("Not matched")
+//     }
+// }
+
+
+// // count how many numbers between 1 to 15 are greater than 8
+// let count = 0;
+
+// for ( let i = 1; i <= 16; i++){
+//     if( i > 9) count++; 
+//     console.log(i)
+// }
+// console.log(` total count is ${count}`)
+
+// // Print multiplication of 5
+
+// for( let i = 1; i <= 10; i++ ) {
+//     console.log(`5 x ${i} = ${5 * i}`);
+// }
+
+// // Aks user's age and check if eligible for voting
+
+// let age = prompt("Enter your age: ")
+
+// if ( age === null) {
+//     console.error("You cancelled it.")
+// }else {
+//     if (age.trim() === "") {
+//         console.error("please write something...")
+//     }else{
+//         age = Number(age)
+//         if(isNaN(age)){
+//             console.error("Please enter a valid number")
+//         }else{
+//             if (age < 0){
+//                 console.error("Age cannot be negative")
+//             } else if (age < 18){
+//                 console.log("You are a minor")
+//             } else if (age >= 18 && age < 65){
+//                 console.log("You are an adult")
+//             } else {
+//                 console.log("You are a senior citizen")
+//             }
+//             console.log(`your age is ${age}`)
+//         }
+//     } 
+// }
 
 
 
