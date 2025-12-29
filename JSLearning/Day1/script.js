@@ -1,29 +1,169 @@
+// DAY 36 
+
+// Recursion in JS
+
+
+
+// ATM Simulator - Allow 3 withdrawals start from 1000 balance. Ask withdrawal amount 3 times
+
+// let balance = 1000;
+// let flag = false;
+
+// let count = 0;
+
+// while(balance > 0 && count !== 3){
+//     let amount = +prompt("Enter withdrawal amount: ");
+//     count++;
+//     if(amount <= balance){
+//         balance -= amount;
+//         console.log(`Withdrawal successful. Remaining balance: ${balance}`);
+//     }else{
+//         flag = true;
+//         console.error("Insufficient balance");
+//         break;
+//     }
+// }
+
+// if( flag === true){
+//     console.log("Insufficient balance");
+// }
+// console.log(`Current Balance ${balance}`);
+
+
+// ASK user 5 numbers. Count how many are positive
+// let counter = 0;
+
+// for(let i = 1 ; i <= 5; i++){
+//     let num = + prompt("ENter the number: ")
+//     if( num > 0) counter++;
+// }
+// console.log(counter)
+
+// Print only first 3 odd numbers between 1 to 20
+
+// let count = 0;
+// let start = +prompt("Enter a number  : ")
+// let end = +prompt("Enter a number  : ")
+
+
+// for(let i = start ; i <= end ; i++){
+//     if( i  % 2 !== 0){
+//         console.log(i)
+//         if( ++count === 3) break;
+//     }
+// }
+
+
+
 //  DAY 34 
 
 // Part 2
-let attempts = 0;
-let flag = false;
-let pass = "Samrat@123"
 
-let password = prompt("Enter your password: ");
-attempts++;
+// let start = +prompt("Enter starting number: ");
+// let end = +prompt("Enter ending number: ");
 
-if (password.trim() === pass) {
-    flag = true;
-    console.log("Go Ahead")
-}
+// if( start > end) console.error("start can not be bigger than end")
 
-while (password.trim() !== pass) {
-    if( attempts === 3){
-        console.error("Account locqwked")
-        break;
-    }
-  password = prompt("Incorrect password. please try again: ")
-  if(password.trim() === pass) {flag = true;
-  console.log("Go ahead")}
-  attempts++;
+//     for(let i = start; i <= end; i++){
+//         console.log(i)
+//     }
 
-}
+
+// keep asking number until user enter the even number
+
+// let number = +prompt("Enter a number: ");
+
+// while( number % 2 !== 0){
+//     number = +prompt("Enter an even number: ");
+// }
+
+// console.log(number)
+
+// print the sum of odd number from 1 to 20
+
+// let sum = 0;
+
+// for(let i = 1; i <= 20; i++){
+//     if( i % 2 === 0){
+//         sum = sum + i;
+//     }
+// }
+// console.log(sum)
+
+// // print the odd numbers between 1 to 30
+
+// for(let i = 1; i <= 30; i++){
+//     if( i % 2 !== 0){
+//         // sum = sum + i;
+//         console.log(i)
+//     }
+// }
+
+
+// Print numbers divisible by 7 from 1 to 50 use modulo % loop.
+
+// for(let i = 0; i <= 50; i++){
+//     if( i % 7 === 0){
+//         console.log(i)
+//     }
+// }
+
+// // count total number of "yes" until user enters "stop"
+
+// let word = prompt("Enter a word: ");
+// let count = 0;
+
+// while( word !== "stop"){
+//     if( word === "yes") count++;
+//     word = prompt("Enter a word again: ");
+// }
+// console.log(`Total number of counti ${count}`)
+
+
+// Allow only 3 attempts to enter correct password
+
+// let attempt = 0;
+// let pass = "Samrat@123"
+
+// let password = prompt("Enter your Password: ")
+// attempt++;
+
+// while( attempt < 3 && pass !== password.trim()){
+//     password = prompt("Incorrect password. please try again: ")
+//     attempt++;
+// }
+
+// if( attempt === 3 && pass !== password.trim()){
+//     console.log("Account Locked")
+// }else{
+//     console.log("LoggedIN")
+// }
+
+
+
+// let attempts = 0;
+// let flag = false;
+// let pass = "Samrat@123"
+
+// let password = prompt("Enter your password: ");
+// attempts++;
+
+// if (password.trim() === pass) {
+//     flag = true;
+//     console.log("Go Ahead")
+// }
+
+// while (password.trim() !== pass) {
+//     if( attempts === 3){
+//         console.error("Account locqwked")
+//         break;
+//     }
+//   password = prompt("Incorrect password. please try again: ")
+//   if(password.trim() === pass) {flag = true;
+//   console.log("Go ahead")}
+//   attempts++;
+
+// }
 
 
 // // Ask your user fro password and print acces status
