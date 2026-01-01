@@ -1,9 +1,5 @@
 // DAY 36 
 
-// Recursion in JS
-
-
-
 // ATM Simulator - Allow 3 withdrawals start from 1000 balance. Ask withdrawal amount 3 times
 
 // let balance = 1000;
