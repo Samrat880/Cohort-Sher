@@ -1,0 +1,47 @@
+body,main{
+    background-color: rgb(45, 180, 224);
+    font-family: Arial, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+
+#Container{
+    width: 700px;
+    height: 400px;
+    background-color: rgb(255, 0, 233);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+
+h1{
+    font-size: 50px;
+    /* background-color: rgb(253, 253, 5); */
+    padding: 10px 50px;
+    border-radius: 10px;
+}
+
+button{
+    padding: 10px 20px;
+    background-color: rgb(253, 169, 0);
+    border: none;
+    border-radius: 5px;
+    font-weight: 600;
+    
+}
+
+button:active{
+    scale: 0.95;
+    background-color: rgb(6, 82, 109);
+    color: white;
+    cursor: pointer;
+}

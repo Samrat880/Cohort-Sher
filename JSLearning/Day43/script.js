@@ -8,3 +8,10 @@ btn.addEventListener('click', function(){
     
     box.style.backgroundColor = `RGB(${c1}, ${c2}, ${c3})`;
 })
+
+// var arr = ['red', 'green', 'blue', 'yellow', 'purple', 'orange'];
+
+// box.addEventListener('mouseover', function(){
+//     var index = Math.floor(Math.random()*arr.length);
+//     box.style.backgroundColor = arr[index];
+// })
