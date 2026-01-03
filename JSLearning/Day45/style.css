@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body,main{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    flex-direction: column;
+
+}
+
+h1{
+    color: white;
+    margin-bottom: 20px;
+    font-size: 3rem;
+}
+
+button{
+    padding: 10px 20px;
+    font-size: 1.5rem;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    
+}
+
+button:active{
+    scale: 0.95;
+}
+
+.card{
+    width: 600px;
+    background-color: white;
+    padding: 20px 20px;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 10px 8px 8px rgba(245, 245, 245, 0.2);
+}
+
+.outer {
+    height: 15px;
+    width: 100%;
+    background-color: #cec9c9;
+    border-radius: 20px;
+    overflow: hidden;
+    margin-top: 20px;
+}
+
+.inner {
+    height: 100%;
+    width: 40%; /* change dynamically */
+    background-color: rgb(14, 241, 203);
+    border-radius: 20px;
+}
+
+
+.bottom{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.bottom h2{
+    font-size: 60px;
+}
+
+.bottom button{
+    padding: 10px 20px;
+    background-color: rgb(14, 241, 203);
+    font-size: 1.5rem;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.bottom button:active{
+    scale: 0.95;
+    background-color: rgb(0, 194, 173);
+}
