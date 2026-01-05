@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    color: rgb(255, 255, 255);
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+html,body{
+height: 100%;
+width: 100%;
+background-color: black;
+
+}
+
+main{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.cursor{
+    height: 50px;
+    width: 50px;
+    background-color: white;
+    mix-blend-mode: difference;
+    border-radius: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    /* pointer-events: none; */
+    z-index: 99999;
+}
+
+
+
+h1{
+    font-size: 9vw;
+    font-weight: 800;
+    position: absolute;
+}
