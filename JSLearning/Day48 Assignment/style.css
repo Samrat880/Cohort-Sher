@@ -1,0 +1,30 @@
+body{
+  background: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.piano{
+  display: flex;
+  gap: 10px;
+}
+
+.key{
+  width: 80px;
+  height: 250px;
+  background: white;
+  border: 2px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  font-size: 20px;
+  cursor: pointer;
+  transition: 0.1s;
+}
+
+.key.active{
+  background: orange;
+  transform: scale(0.97);
+}
