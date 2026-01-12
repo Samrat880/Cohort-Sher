@@ -1,0 +1,25 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%; 
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+p{
+    font-size: 5rem;
+    background: linear-gradient(45deg, #d8c1c1, #6ed46e, #4747db);
+    color: transparent;
+    background-clip: text;
+}
