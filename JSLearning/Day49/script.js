@@ -128,16 +128,14 @@ allReels.innerHTML = reels
           <div class="user">
             <img src="${reel.userProfile}" alt="${reel.username} avatar">
             <h4>${reel.username}</h4>
-            <button>${reel.isFollowed ? "Following" : "Follow"}</button>
+            <button>${reel.isFollowed}</button>
           </div>
           <h4>${reel.caption}</h4>
         </div>
         <div class="right">
-          <div class="like" data-liked="${reel.isLiked}">
+          <div id=${idx} class="like">
             <h4 class="like-icon">
-              <i class="${
-                reel.isLiked ? "ri-heart-fill" : "ri-heart-line"
-              }"></i>
+              <i class="ri-heart-line"></i>
             </h4>
             <h6>${reel.likeCount}</h6>
           </div>
@@ -158,3 +156,8 @@ allReels.innerHTML = reels
     `
   )
   .join("");
+
+
+
+// Like Button Functionality
+
