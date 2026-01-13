@@ -15,6 +15,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 
 p{
@@ -22,4 +23,6 @@ p{
     background: linear-gradient(45deg, #d8c1c1, #6ed46e, #4747db);
     color: transparent;
     background-clip: text;
+    margin: 15px;
+    padding: 20px;
 }
