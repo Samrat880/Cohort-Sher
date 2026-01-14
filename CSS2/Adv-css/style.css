@@ -1,0 +1,79 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+body{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes changeBackgroundColor{
+    from{
+        /* background-color: wheat; */
+        border-radius: 10px;
+        scale: 1;
+        transform: translateX(0px);
+    }
+    to{
+        /* background-color: red; */
+        border-radius: 50px;
+        scale: 0.5;
+        transform: translateY(100px);
+        
+    }
+}
+
+
+@property --bgColor{
+    syntax: "<color>";
+    inherits: false;
+}
+
+
+.box{
+    height: 730px;
+    width: 500px;
+    padding-inline: 10px;
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    overflow: hidden;
+
+    box-shadow: 0 0 60px rgb(119, 1, 1);
+    color: whitesmoke;
+    background-color: var(--bgColor);
+    background: conic-gradient(from 180deg at 50% 50%, red, rgb(0, 0, 0),red);
+    border: 1px white solid;
+    animation: changeBackgroundColor 5s infinite alternate;
+}
+
+.box img{
+    display: inline;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    object-fit: cover;
+    
+}
+
+.box h1{
+    font-size: 2rem;
+    text-align: center;
+}
+
+.box p{
+    font-size: 1.2rem;
+    text-align: justify;
+}
