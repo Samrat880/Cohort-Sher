@@ -51,11 +51,13 @@ body{
     gap: 10px;
     overflow: hidden;
 
-    box-shadow: 0 0 60px rgb(119, 1, 1);
+    box-shadow: 0 0 100px rgb(119, 1, 1);
     color: whitesmoke;
     background-color: var(--bgColor);
-    background: conic-gradient(from 180deg at 50% 50%, red, rgb(0, 0, 0),red);
-    border: 1px white solid;
+    background: 
+    linear-gradient(to top left, rgba(255, 0, 0, 0.603) , rgba(255, 255, 255, 0.164)),
+    conic-gradient(from 180deg at 50% 50%, rgb(255, 0, 0), rgb(0, 0, 0),red);
+    border: 10px rgba(0, 0, 0, 0) solid;
     animation: changeBackgroundColor 5s infinite alternate;
 }
 
