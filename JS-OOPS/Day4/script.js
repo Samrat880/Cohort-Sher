@@ -84,26 +84,44 @@
 // User();
 
 
-function asyncTask(){
+// function asyncTask(){
 
-    return new Promise((res,rej) => {
-        setTimeout(() => {
-            let v = Math.floor(Math.random()*10);
-            if ( v > 5 ){
-                res(true);
-            }rej(false);
-        },1000)
-    })
-} 
+//     return new Promise((res,rej) => {
+//         setTimeout(() => {
+//             let v = Math.floor(Math.random()*10);
+//             if ( v > 5 ){
+//                 res(true);
+//             }rej(false);
+//         },1000)
+//     })
+// } 
 
-async function task() {
-    try{
+// async function task() {
+//     try{
 
-        let v = await asyncTask()
-        console.log(v)
-    } catch(e){
-        console.log(e)
-    }
-}
+//         let v = await asyncTask()
+//         console.log(v)
+//     } catch(e){
+//         console.log(e)
+//     }
+// }
 
-task()
+// task()
+
+// async function getWeather(city){
+
+// try{
+//     let raw = await fetch(`https://wttr.in/${city}?format=j1`)
+//     if(!raw.ok){
+//         throw new Error("City not found");
+//     }
+
+//     let data =  await raw.json()
+//     console.log(`The temperature in ${city} is ${data.current_condition[0].temp_C}°C`); 
+// }catch (err) {
+//         console.log("Error occured: ", err);
+//     }
+// }
+
+// getWeather("jjjj");
+
