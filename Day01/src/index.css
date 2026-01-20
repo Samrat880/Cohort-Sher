@@ -8,66 +8,7 @@
 html,body{
   height: 100%;
   width: 100%;
-  background-color: black;
+  background-color: rgb(48, 46, 46);
   color: white;
 }
 
- /* manage the NavBar  in row */
-
-.nav{
-  background-color: grey;
-  padding: 20px;
-  height: 60px;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  overflow: hidden;
-}
-
-.nav li{
-  display: inline;
-  margin-right: 20px;
-  list-style: none;
-}
-
-.foot{
-  background-color: grey;
-  padding: 20px;
-  position: static;
-  bottom: 0;
-  width: 100%;
-}
-
-.section{
-  background-color: rgb(48, 182, 226);
-  height: 100vh;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;  
-  
-}
-
-
-h2{
-  margin: 20px 0;
-  flex-direction: row ;
-}
-
-
-.section h1{
-  margin-bottom: 20px;
-  font-size: 3.5rem;
-}
-
-.center{
-  text-align: center;
-  /* position: relative; */
-  padding: 50px 20px;
-
-  height: 900px;
-  width: 900px;
-  background: linear-gradient(red, black);
-
-}
