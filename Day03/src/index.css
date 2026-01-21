@@ -1,0 +1,19 @@
+@import "tailwindcss";
+
+*{
+  /* margin: 0; */
+  /* padding: 0; */
+  box-sizing: border-box; 
+  font-family: 'helvetica neue', helvetica, arial, sans-serif;
+}
+
+html, body, #root {
+  height: 100%;
+  width: 100%;
+}
+
+.box{
+  height: 200px;
+  width: 200px;
+  background-color: rgb(255, 7, 152);
+}
